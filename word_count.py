@@ -111,7 +111,7 @@ def create_ouptput_directory(output_directory):
 #
 def save_output(output_directory, sequence):
     #concatenar con os el nombre del directio y del archivo
-    filename = os.path.join(output_directory, "part-00000)")
+    filename = os.path.join(output_directory, "part-00000")
     with open(filename, "w") as f:
         for key, value in sequence:
             f.write(f"{key}\t{value}\n")
