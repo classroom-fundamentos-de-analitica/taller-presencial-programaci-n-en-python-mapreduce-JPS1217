@@ -137,7 +137,6 @@ def job(input_directory, output_directory):
     sequence = mapper(sequence)
     sequence = shuffle_and_sort(sequence)
     sequence = reducer(sequence)
-    print(sequence)
     create_ouptput_directory(output_directory)
     save_output(output_directory, sequence)
     create_marker(output_directory)
